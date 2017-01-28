@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCGTUnY4fLYjJK5VSNblwCkbDsR_vTgby0",
+      authDomain: "mapapp-2a84b.firebaseapp.com",
+      databaseURL: "https://mapapp-2a84b.firebaseio.com",
+      storageBucket: "mapapp-2a84b.appspot.com",
+      messagingSenderId: "1094912226445"
+    };
+    firebase.initializeApp(config);
+    </script>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <form id="form">
+      <label>Event Name</label>
+      <input type="text" name="name"><br>
+      <label>Event Location</label>
+      <input type="text" name="loc"><br>
+      <label>Event Date (MM-DD-YYYY)</label>
+      <input type="text" name="date"><br>
+      <label>Event Description</label>
+      <input type="text" name="desc"><br>
+      <label>Event Start Time</label>
+      <input type="text" name="start_time"><br>
+      <label>Event End Time</label>
+      <input type="text" name="end_time"><br>
+      <input type="submit">
+    </form>
+  </body>
+  <script src ="./formscript.js"></script>
+</html>
